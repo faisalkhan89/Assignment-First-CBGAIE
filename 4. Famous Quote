@@ -1,0 +1,2 @@
+let FamousQuote: string = 'Bill Gates Said, "If you Born Poor Its Not Your Mistake But If you Died Poor its Your Mistake"';
+console.log(FamousQuote);
