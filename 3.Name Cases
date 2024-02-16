@@ -1,0 +1,6 @@
+let Eric1: string = "eric";
+console.log(Eric1);
+let Eric2 : string = "ERIC";
+console.log(Eric2);
+let Eric3 : string = "Mr.Eric";
+console.log(Eric3);
