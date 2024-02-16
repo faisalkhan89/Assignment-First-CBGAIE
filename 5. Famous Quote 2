@@ -1,0 +1,5 @@
+let Famous_person : string = "Bill Gates"
+console.log("Bill Gates")
+
+let message: string = 'Bill Gates Said, "If you Born Poor Its Not Your Mistake But If you Died Poor its Your Mistake"';
+console.log(message);
