@@ -1,0 +1,5 @@
+const personname : string = "   \n\tIMRAN KHAN\t\n    ";
+console.log(personname);
+
+const Without_whitespaces :string = personname.trim()
+console.log(Without_whitespaces);
