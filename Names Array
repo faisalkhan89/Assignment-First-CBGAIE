@@ -1,0 +1,8 @@
+let names :string[]= ['Faisal','Jawad', 'Aisha','Zulqarnain'];
+
+const message : string = "Welcome To Type Script Class:  ";
+
+for(let i=0; i<names.length; i++){
+    console.log(message + names[i]) ;
+    
+}
