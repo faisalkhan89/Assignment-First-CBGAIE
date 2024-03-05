@@ -1,0 +1,17 @@
+interface Country {
+    name: string;
+    capital: string;
+}
+
+let countries: Country[] = [
+    { name: "United States", capital: "Washington, D.C." },
+    { name: "United Kingdom", capital: "London" },
+    { name: "France", capital: "Paris" },
+    { name: "Germany", capital: "Berlin" },
+    { name: "Japan", capital: "Tokyo" }
+];
+
+console.log("List of countries and their capitals:");
+countries.forEach(country => {
+    console.log(`${country.name} - Capital: ${country.capital}`);
+});
