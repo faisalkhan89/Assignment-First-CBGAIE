@@ -1,0 +1,23 @@
+function make_great(magicians: string[]): string[] {
+    // Modifying the array by adding "the Great" to each magician's name
+    for (let i = 0; i < magicians.length; i++) {
+        magicians[i] = "the Great " + magicians[i];
+    }
+    return magicians;
+}
+
+// Define an array of magician's names
+let magicians: string[] = ["Harry Houdini", "David Blaine", "Penn Jillette"];
+
+// Call the make_great() function to modify the array
+magicians = make_great(magicians);
+
+// Call the show_magicians() function to see the modified list
+show_magicians(magicians);
+
+// Function to show the magicians
+function show_magicians(magicians: string[]): void {
+    for (let magician of magicians) {
+        console.log(magician);
+    }
+}
