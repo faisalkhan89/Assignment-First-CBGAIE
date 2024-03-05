@@ -1,0 +1,12 @@
+let numbers: number[] = [1, 2, 3, 4, 5];
+
+// Intentional error: accessing an index that doesn't exist
+console.log(numbers[10]); // This will produce an index error
+
+// Correcting the error
+console.log("Corrected version:");
+if (numbers.length > 10) {
+    console.log(numbers[10]); // Accessing a valid index
+} else {
+    console.log("Index out of range.");
+}
