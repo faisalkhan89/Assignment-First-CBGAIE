@@ -1,0 +1,94 @@
+// Exercise 14
+let dinnerGuests: string[] = ["Albert Einstein", "Leonardo da Vinci", "Marie Curie"];
+
+// Invite each guest to dinner
+for (let guest of dinnerGuests) {
+    console.log(`Dear ${guest}, you are cordially invited to dinner.`);
+}
+
+// Exercise 15
+console.log("\nOne of the guests can't make it: Leonardo da Vinci");
+dinnerGuests[1] = "Isaac Newton";
+
+// Print second set of invitation messages
+for (let guest of dinnerGuests) {
+    console.log(`Dear ${guest}, you are still invited to dinner.`);
+}
+
+// Exercise 16
+console.log("\nBigger dinner table found!");
+
+// Add new guests
+dinnerGuests.unshift("Galileo Galilei");
+dinnerGuests.splice(2, 0, "Nikola Tesla");
+dinnerGuests.push("Stephen Hawking");
+
+// Print new set of invitation messages
+for (let guest of dinnerGuests) {
+    console.log(`Dear ${guest}, you are invited to dinner.`);
+}
+
+// Exercise 17
+console.log("\nNew dinner table won't arrive in time. Can invite only two people.");
+
+// Remove guests until only two remain
+while (dinnerGuests.length > 2) {
+    let removedGuest = dinnerGuests.pop();
+    console.log(`Sorry ${removedGuest}, we can't invite you to dinner.`);
+}
+
+// Print invitation messages to the remaining guests
+for (let guest of dinnerGuests) {
+    console.log(`Dear ${guest}, you are still invited to dinner.`);
+}
+
+// Exercise 21
+console.log("\nSeeing the World:");
+let placesToVisit: string[] = ["Paris", "Tokyo", "Machu Picchu", "Santorini", "Great Barrier Reef"];
+
+// Print original array
+console.log("Original Order:", placesToVisit);
+
+// Print array in alphabetical order
+console.log("Alphabetical Order:", placesToVisit.slice().sort());
+
+// Print array to show it's still in original order
+console.log("Original Order:", placesToVisit);
+
+// Print array in reverse alphabetical order
+console.log("Reverse Alphabetical Order:", placesToVisit.slice().sort().reverse());
+
+// Print array to show it's still in original order
+console.log("Original Order:", placesToVisit);
+
+// Reverse the order of the list
+placesToVisit.reverse();
+console.log("Reversed Order:", placesToVisit);
+
+// Reverse the order again to get back to the original order
+placesToVisit.reverse();
+console.log("Original Order:", placesToVisit);
+
+// Sort the array in alphabetical order
+console.log("Sorted Alphabetically:", placesToVisit.sort());
+
+// Sort the array in reverse alphabetical order
+console.log("Sorted Reverse Alphabetically:", placesToVisit.sort().reverse());
+
+// Exercise 18
+console.log("\nDinner Guests:");
+console.log(`Number of people invited to dinner: ${dinnerGuests.length}`);
+
+// Exercise 19
+console.log("\nArray Example:");
+let mountains: string[] = ["Everest", "K2", "Kangchenjunga", "Makalu", "Dhaulagiri"];
+console.log("List of mountains:", mountains);
+
+// Exercise 20
+console.log("\nObject Example:");
+let languages: { [key: string]: string }[] = [
+    { name: "JavaScript", type: "programming" },
+    { name: "Python", type: "programming" },
+    { name: "Spanish", type: "spoken" }
+];
+console.log("List of languages:", languages);
