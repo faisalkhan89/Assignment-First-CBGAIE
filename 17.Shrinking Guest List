@@ -1,0 +1,22 @@
+// Exercise 17
+console.log("\nExercise 17:");
+console.log("Unfortunately, our new dinner table won't arrive in time.");
+
+// Print message for only two guests
+console.log("We can only invite two people for dinner.");
+while (guests.length > 2) {
+    let removedGuest = guests.pop();
+    console.log(`Sorry ${removedGuest}, we can't invite you to dinner.`);
+}
+
+// Print invitation messages to the remaining guests
+for (let guest of guests) {
+    console.log(`Dear ${guest}, you are still invited to dinner!`);
+}
+
+// Remove the last two names from the list
+guests.pop();
+guests.pop();
+
+// Print the final list to ensure it's empty
+console.log("Final guest list:", guests);
