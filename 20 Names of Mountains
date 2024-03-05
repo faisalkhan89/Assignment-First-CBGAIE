@@ -1,0 +1,4 @@
+let mountains: string[] = ["Mount Everest", "K2", "Kangchenjunga", "Lhotse", "Makalu"];
+
+console.log("List of famous mountains:");
+console.log(mountains);
