@@ -1,0 +1,6 @@
+// Exercise 12
+console.log("\nExercise 12:");
+// Print a message to each person in the list, personalized with their name
+for (let name of names) {
+    console.log(`Hello ${name}, how are you doing today?`);
+}
