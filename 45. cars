@@ -1,0 +1,28 @@
+function carInfo(manufacturer: string, model: string, color: string, year: number, features: string, ...extras: { [key: string]: any }[]): { [key: string]: any } {
+    let car: { [key: string]: any } = {
+        manufacturer: manufacturer,
+        model: model,
+        color: color,
+        year: year,
+        features: features,
+        extras: extras,
+
+
+
+    };
+
+    // Adding extra information to the car object
+    extras.forEach(extras => {
+        for (let key in extras) {
+            car[key] = extras[key];
+        }
+    });
+
+    return car;
+}
+
+// Call the function with required information and additional details
+let carDetails = carInfo("Toyota", "Camry", "blue", 2022, "Sunroof", "Leatherseats");
+
+// Print the object returned by the function
+console.log(carDetails);
