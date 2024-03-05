@@ -1,0 +1,28 @@
+// Tests for equality and inequality with strings
+let fruit = 'apple';
+console.log(`Is the fruit an apple? ${fruit == 'apple'}`);
+console.log(`Is the fruit not a banana? ${fruit != 'banana'}`);
+
+// Tests using the lower case function
+let city = 'New York';
+console.log(`Is the city lowercase? ${city.toLowerCase() == 'new york'}`);
+
+// Numerical tests
+let x = 5;
+console.log(`Is x equal to 5? ${x == 5}`);
+console.log(`Is x not equal to 10? ${x != 10}`);
+console.log(`Is x greater than 3? ${x > 3}`);
+console.log(`Is x less than or equal to 5? ${x <= 5}`);
+
+// Tests using "and" and "or" operators
+let age = 25;
+console.log(`Is the age between 18 and 30? ${age >= 18 && age <= 30}`);
+console.log(`Is the age less than 18 or greater than 65? ${age < 18 || age > 65}`);
+
+// Test whether an item is in an array
+let colors = ['red', 'green', 'blue'];
+console.log(`Is 'green' in the colors array? ${colors.includes('green')}`);
+
+// Test whether an item is not in an array
+let animals = ['dog', 'cat', 'rabbit'];
+console.log(`Is 'lion' not in the animals array? ${!animals.includes('lion')}`);
