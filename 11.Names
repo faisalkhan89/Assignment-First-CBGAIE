@@ -1,6 +1,8 @@
-let names :string[]= ['Faisal','Jawad', 'Aisha','Zulqarnain'];
+// Exercise 11
+let names: string[] = ["Alice", "Bob", "Charlie", "David"];
 
-for(let i=0; i<names.length; i++){
-    console.log(names[i]) ;
-    
+// Print each person's name by accessing each element in the list, one at a time
+console.log("Exercise 11:");
+for (let name of names) {
+    console.log(name);
 }
