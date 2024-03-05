@@ -1,0 +1,14 @@
+let pizzas: string[] = ["Pepperoni", "Fajita", "Afghani Tikka"];
+
+// Print the name of each pizza
+for (let pizza of pizzas) {
+    console.log(pizza);
+}
+
+// Modify the for loop to print a sentence for each pizza
+for (let pizza of pizzas) {
+    console.log(`I like ${pizza} pizza.`);
+}
+
+// Print additional sentence about how much you like pizza
+console.log("I really love pizza!");
